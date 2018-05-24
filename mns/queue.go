@@ -44,7 +44,6 @@ func GetHeader(method, resource string, exheader map[string]string) (header map[
 	header["Date"] = date
 	header["Host"] = host
 	header["Content-Type"] = ContentType
-	fmt.Println("header: ", header)
 	return
 }
 
