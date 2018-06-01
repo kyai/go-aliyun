@@ -73,7 +73,7 @@ func getAuthorization(Method, ContentType, Date, CanonicalizedMNSHeaders, Canoni
 	//base64
 	auth = base64.StdEncoding.EncodeToString(mac.Sum(nil))
 	auth = "MNS " + AccessKeyId + ":" + auth
-	fmt.Println(Date, auth)
+	// fmt.Println(Date, auth)
 	return
 }
 
